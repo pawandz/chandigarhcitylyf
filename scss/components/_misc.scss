@@ -1,0 +1,106 @@
+html {
+  font-size: 14px;
+
+  @include media-breakpoint-up(md) {
+    font-size: 14px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    font-size: 15px;
+  }
+
+  @include media-breakpoint-up(xl) {
+    font-size: 16px;
+  }
+
+  @include media-breakpoint-up(xxl) {
+    font-size: 17px;
+  }
+
+  @media (min-width: 1600px) {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .container {
+    max-width: 1440px;
+  }
+}
+
+@media (min-width: 1800px) {
+  .container {
+    max-width: 1536px;
+  }
+}
+
+@media print {
+  .pagebreak {
+    clear: both;
+    page-break-after: always;
+  }
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.container-fluid {
+  max-width: none;
+}
+
+:focus {
+  //box-shadow: none !important;
+  outline: 0 !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+}
+
+p {
+  margin: 0;
+}
+
+b,
+strong {
+  font-weight: $font-weight-normal;
+}
+
+.strong {
+  font-weight: $font-weight-normal;
+}
+
+ol,
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  color: $txt-brand;
+  text-decoration: underline;
+}
+
+.svg {
+  fill: currentColor;
+}
+
+mark,
+.mark {
+  padding: 0;
+}

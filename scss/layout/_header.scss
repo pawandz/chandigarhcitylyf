@@ -1,0 +1,41 @@
+.header {
+  //@include bg-blur-black;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  // background-image: url(../media/backgrounds/menutexture.png);
+  // background-position: center top;
+  // background-size: auto 200px;
+  // background-repeat: repeat-x;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  color: #fff;
+
+  &-inner {
+    display: flex;
+    //align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.logo {
+  background-color: $bg-white;
+  display: block;
+  padding: 1rem;
+  width: 76px;
+  height: 90px;
+  text-align: center;
+}
+
+.donate-link {
+  color: currentColor;
+  font-weight: 600;
+  padding: 1.5rem 0;
+}

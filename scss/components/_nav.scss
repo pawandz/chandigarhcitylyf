@@ -1,0 +1,105 @@
+$nav: "nav";
+.#{$nav} {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0 0;
+    margin: 0;
+    list-style: none;
+    border: 0;
+
+    &-item {
+        display: flex;
+    }
+    &-link {
+        display: flex;
+        gap: 10px;
+        flex-grow: 1;
+        align-items: center;
+        padding: 0.75rem 1.25rem;
+        color: $txt-gray;
+        cursor: pointer;
+        transition: all 0.3s;
+    }
+    &-text {
+        flex-grow: 1;
+        font-size: 1rem;
+        color: #595d6e;
+        font-weight: 400;
+    }
+    &-icon {
+        flex: 0 0 30px;
+        font-size: 1.25rem;
+        line-height: 0;
+        color: #a2a5b9;
+        &:before {
+            line-height: 0;
+        }
+        g [fill] {
+            transition: fill 0.3s ease;
+            fill: #a2a5b9;
+        }
+        &:hover g [fill] {
+            transition: fill 0.3s ease;
+        }
+    }
+    &-bullet {
+        text-align: center;
+        flex: 0 0 10px;
+        margin-#{$end-direction}: 10px;
+        > span {
+            vertical-align: middle;
+            display: inline-block;
+        }
+        &.nav-link-bullet {
+            &-dot {
+                > span {
+                    width: 4px;
+                    height: 4px;
+                    border-radius: 100%;
+                }
+            }
+            &-line {
+                > span {
+                    width: 8px;
+                    height: 2px;
+                    border-radius: 2px;
+                }
+            }
+            &-dot,
+            &-line {
+                span {
+                    background-color: #a2a5b9;
+                }
+            }
+        }
+    }
+    &-badge {
+        padding: 0 0 0 5px;
+    }
+    &-arrow {
+        text-align: right;
+        flex: 0 0 20px;
+        font-size: 0.8rem;
+        color: #a2a5b9;
+        font-family: LineAwesome;
+        text-decoration: inherit;
+        text-rendering: optimizeLegibility;
+        text-transform: none;
+        &:before {
+            content: "";
+            display: inline-block;
+            transition: all 0.3s ease;
+        }
+    }
+
+    //
+    &-pills {
+        &-sm {
+            &-link {
+                background-color: #ddd;
+                border-radius: 50px;
+                padding: 0.35rem 0.825rem;
+            }
+        }
+    }
+}

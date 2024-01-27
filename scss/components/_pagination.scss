@@ -1,0 +1,83 @@
+.pagination {
+    display: flex;
+    gap: 10px;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    background: $bg-white;
+    border-radius: $common-radius;
+    overflow: hidden;
+    margin: 0;
+    &-center {
+        justify-content: center;
+        width: 100%;
+    }
+    &-right {
+        justify-content: flex-end;
+    }
+    &-links {
+        display: flex;
+        li {
+            list-style: none;
+            a {
+                width: 40px;
+                line-height: 38px;
+                text-align: center;
+                height: 38px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 0.875rem;
+                color: $txt-body;
+                border: none;
+                border: $border;
+                border-radius: 1px;
+                position: relative;
+                overflow: hidden;
+                margin: 3px;
+                &:hover {
+                    // background-color: $brand-color;
+                    // color:  lighten($brand-color, 55%);
+                    @include bg-brand();
+                    border-color: $brand-color;
+                    text-decoration: none;
+                }
+                .svg {
+                    width: 1rem;
+                    height: 1rem;
+                }
+            }
+            &.selected {
+                a {
+                    border-color: $brand-color;
+                    // background-color: $brand-color;
+                    // color:  lighten($brand-color, 55%);
+                    @include bg-brand();
+                    &:hover {
+                        background-color: darken($brand-color, 5%);
+                        color: lighten($brand-color, 55%) !important;
+                    }
+                }
+            }
+            &.disabled {
+                opacity: 0.4;
+                a {
+                    cursor: not-allowed;
+                }
+            }
+        }
+    }
+
+    [dir="rtl"] & {
+        i,
+        svg {
+            transform: rotate(180deg);
+        }
+    }
+
+    &-toolbar {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        flex-flow: row wrap;
+    }
+}

@@ -1,0 +1,28 @@
+//
+@import "bootstrap/bootstrap";
+@import "bootstrap/variables";
+
+//
+@import "themes/variables";
+
+//
+@import "layout/header";
+@import "layout/nav";
+@import "layout/footer";
+//
+@import "components/bg";
+// @import "components/forms";
+// @import "components/checkbox";
+// @import "components/buttons";
+@import "components/section";
+// @import "components/typography";
+// @import "components/radio";
+// @import "components/cookies";
+@import "components/scrollbar";
+@import "components/cms";
+@import "components/misc";
+@import "components/collection-incentives";
+//
+@import "vendor/slick";
+//
+@import "page/index";

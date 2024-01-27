@@ -1,0 +1,46 @@
+.navigation {
+  //width: 100%;
+  margin: 0;
+  display: flex;
+  padding: 0;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+
+  &-item {
+    display: block;
+    font-weight: $font-weight-regular;
+    position: static;
+    margin: 0 20px;
+  }
+
+  &-link {
+    @include truncate(100%);
+    color: currentColor;
+    display: block;
+    padding: 1rem 0;
+    position: relative;
+    text-align: center;
+    line-height: 1;
+    font-size: 0.9rem;
+    font-weight: $font-weight-bold;
+    border: none;
+    background-color: transparent;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size 0.3s;
+
+    &:is(:hover, :focus, :active) {
+      color: $txt-brand;
+      text-decoration: none;
+      background-size: 100% 2px;
+
+      a {
+        background-size: 100% 2px;
+        color: $txt-brand;
+      }
+    }
+  }
+}
