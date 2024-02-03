@@ -28,8 +28,24 @@
       content="JRDQ8wLctMQ0G5DIJ9-1OulEGYXZzns8FT6_oClt17U"
     />
     <!-- favicon ================================================== -->
-    <link rel="shortcut icon" href="media/favicon.ico" />
-    <link rel="icon" type="image/png" href="media/favicon.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon/site.webmanifest" />
   </head>
   <body>
     <header class="header">
@@ -37,7 +53,7 @@
         <div class="header-inner">
           <div class="logo">
             <a href="/" title="Chandigarh City Lyf">
-              <img src="./media/logos/wwf-logo.png" alt="" />
+              <img src="./media/logos/ccl.svg" alt="" />
             </a>
           </div>
           <div class="overlay"></div>
@@ -227,40 +243,91 @@
     </header>
     <main class="main" id="main">
       <div class="hero-fold">
-        <div id="slider">
-          <div class="slider-inner">
-            <div id="slider-content">
-              <div class="meta">Species</div>
-              <h2 id="slide-title">Amur <br />Leopard</h2>
-              <span data-slide-title="0">Amur <br />Leopard</span>
-              <span data-slide-title="1">Asiatic <br />Lion</span>
-              <span data-slide-title="2">Siberian <br />Tiger</span>
-              <span data-slide-title="3">Brown <br />Bear</span>
-              <div class="meta">Status</div>
-              <div id="slide-status">Critically Endangered</div>
-              <span data-slide-status="0">Critically Endangered</span>
-              <span data-slide-status="1">Endangered</span>
-              <span data-slide-status="2">Endangered</span>
-              <span data-slide-status="3">Least Concern</span>
+        <!--Main Slider Start-->
+        <section class="main-slider">
+          <div class="swiper-container thm-swiper__slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div
+                  class="image-layer"
+                  style="
+                    background-image: url(https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2047&q=80);
+                  "
+                ></div>
+
+                <div class="container">
+                  <div class="main-slider__content">
+                    <div class="main-slider__title-box-1">
+                      <h2>Chandigarh - The City Beautiful</h2>
+                      <div class="main-slider__title-box-2">
+                        <h2>Chandigarh - The City Beautiful</h2>
+                      </div>
+                    </div>
+
+                    <div class="main-slider-badge">
+                      <img
+                        data-tilt
+                        src="assets/images/resources/main-slider-badge.png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- If we need navigation buttons -->
+            <div class="slider-bottom-box clearfix">
+              <div class="swiper-pagination" id="main-slider-pagination"></div>
+              <div class="main-slider__nav">
+                <div
+                  class="swiper-button-prev"
+                  id="main-slider__swiper-button-next"
+                >
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g
+                      fill="none"
+                      stroke="#fff"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                    >
+                      <path data-name="Right" d="m7.6 7-5.1 5 5.1 5" />
+                      <path d="M21.5 12H4.8" />
+                    </g>
+                  </svg>
+                </div>
+                <div
+                  class="swiper-button-next"
+                  id="main-slider__swiper-button-prev"
+                >
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g
+                      fill="none"
+                      stroke="#fff"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                    >
+                      <path data-name="Right" d="m16.4 7 5.1 5-5.1 5" />
+                      <path d="M2.5 12h16.7" />
+                    </g>
+                  </svg>
+                </div>
+              </div>
             </div>
           </div>
-
-          <img src="./media/webp/chd/green-trees-cloudy-nature.webp" />
-          <img src="./media/webp/chd/green-trees-cloudy-nature-1.webp" />
-          <img
-            src="./media/webp/chd/green-trees-cloudy-nature-summer-landscape.webp"
-          />
-          <img
-            src="./media/webp/chd/green-trees-cloudy-nature-summer-landscape-1.webp"
-          />
-
-          <div id="pagination">
-            <button class="active" data-slide="0"></button>
-            <button data-slide="1"></button>
-            <button data-slide="2"></button>
-            <button data-slide="3"></button>
-          </div>
-        </div>
+        </section>
+        <!--Main Slider End-->
       </div>
       <section class="section p-0" data-collection="cms">
         <div class="split-hero-container">
@@ -324,12 +391,11 @@
               <div class="renting">
                 <div class="renting-item">
                   <div class="renting-icon">
-                    <img
-                      width="50"
-                      height="50"
-                      src="./media/icons/double-bed.png"
-                      alt=""
-                    />
+                    <svg class="svg" width="40" height="40">
+                      <use
+                        xlink:href="media/retina/sprite.svg#Master-Plan"
+                      ></use>
+                    </svg>
                   </div>
                   <h3>Master Plan by Le Corbusier:</h3>
                   <p>
@@ -340,12 +406,11 @@
                 </div>
                 <div class="renting-item">
                   <div class="renting-icon">
-                    <img
-                      width="50"
-                      height="50"
-                      src="./media/icons/double-bed.png"
-                      alt=""
-                    />
+                    <svg class="svg" width="40" height="40">
+                      <use
+                        xlink:href="media/retina/sprite.svg#Sectoral-Division"
+                      ></use>
+                    </svg>
                   </div>
                   <h3>Sectoral Division:</h3>
                   <p>
@@ -357,12 +422,9 @@
                 </div>
                 <div class="renting-item">
                   <div class="renting-icon">
-                    <img
-                      width="50"
-                      height="50"
-                      src="./media/icons/double-bed.png"
-                      alt=""
-                    />
+                    <svg class="svg" width="40" height="40">
+                      <use xlink:href="media/retina/sprite.svg#Greenery"></use>
+                    </svg>
                   </div>
                   <h3>Open Spaces and Greenery:</h3>
                   <p>
@@ -374,12 +436,11 @@
                 </div>
                 <div class="renting-item">
                   <div class="renting-icon">
-                    <img
-                      width="50"
-                      height="50"
-                      src="./media/icons/double-bed.png"
-                      alt=""
-                    />
+                    <svg class="svg" width="40" height="40">
+                      <use
+                        xlink:href="media/retina/sprite.svg#Grid-Layout"
+                      ></use>
+                    </svg>
                   </div>
                   <h3>Grid Layout:</h3>
                   <p>
@@ -391,12 +452,9 @@
                 </div>
                 <div class="renting-item">
                   <div class="renting-icon">
-                    <img
-                      width="50"
-                      height="50"
-                      src="./media/icons/double-bed.png"
-                      alt=""
-                    />
+                    <svg class="svg" width="40" height="40">
+                      <use xlink:href="media/retina/sprite.svg#Zoning"></use>
+                    </svg>
                   </div>
                   <h3>Zoning Regulations:</h3>
                   <p>
@@ -409,12 +467,11 @@
                 </div>
                 <div class="renting-item">
                   <div class="renting-icon">
-                    <img
-                      width="50"
-                      height="50"
-                      src="./media/icons/double-bed.png"
-                      alt=""
-                    />
+                    <svg class="svg" width="40" height="40">
+                      <use
+                        xlink:href="media/retina/sprite.svg#Architecture"
+                      ></use>
+                    </svg>
                   </div>
                   <h3>Modern Architecture:</h3>
                   <p>
@@ -427,12 +484,11 @@
 
                 <div class="renting-item">
                   <div class="renting-icon">
-                    <img
-                      width="50"
-                      height="50"
-                      src="./media/icons/double-bed.png"
-                      alt=""
-                    />
+                    <svg class="svg" width="40" height="40">
+                      <use
+                        xlink:href="media/retina/sprite.svg#Educational"
+                      ></use>
+                    </svg>
                   </div>
                   <h3>Educational and Cultural Hubs:</h3>
                   <p>
@@ -446,12 +502,11 @@
 
                 <div class="renting-item">
                   <div class="renting-icon">
-                    <img
-                      width="50"
-                      height="50"
-                      src="./media/icons/double-bed.png"
-                      alt=""
-                    />
+                    <svg class="svg" width="40" height="40">
+                      <use
+                        xlink:href="media/retina/sprite.svg#Transportation"
+                      ></use>
+                    </svg>
                   </div>
                   <h3>Efficient Transportation:</h3>
                   <p>
@@ -464,12 +519,9 @@
 
                 <div class="renting-item">
                   <div class="renting-icon">
-                    <img
-                      width="50"
-                      height="50"
-                      src="./media/icons/double-bed.png"
-                      alt=""
-                    />
+                    <svg class="svg" width="40" height="40">
+                      <use xlink:href="media/retina/sprite.svg#Life"></use>
+                    </svg>
                   </div>
                   <h3>Quality of Life:</h3>
                   <p>
@@ -1038,7 +1090,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="./js/min/main.js" type="text/javascript"></script>
     <script>
-      var swiper = new Swiper(".swiper", {
+      var swiper = new Swiper(".testimonials-layout-2", {
         grabCursor: true,
         speed: 400,
         loop: true,
@@ -1062,6 +1114,29 @@
             spaceBetween: 20,
           },
         },
+      });
+
+      //
+
+      var swiper = new Swiper(".swiper-container", {
+        direction: "horizontal",
+        slidesPerView: 1,
+        loop: true,
+        effect: "fade",
+        speed: 1000,
+        navigation: {
+          nextEl: "#main-slider__swiper-button-next",
+          prevEl: "#main-slider__swiper-button-prev",
+        },
+        pagination: {
+          el: "#main-slider-pagination",
+          type: "bullets",
+          clickable: true,
+        },
+        autoplay: {
+          delay: 5000,
+        },
+        touchEventsTarget: "container",
       });
     </script>
   </body>

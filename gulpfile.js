@@ -3,11 +3,19 @@ const sass = require("gulp-sass")(require("sass"));
 sass.compiler = require("node-sass");
 const sourcemaps = require("gulp-sourcemaps");
 const autoprefixer = require("gulp-autoprefixer");
+const svgSprite = require("gulp-svg-sprite");
 const gulp = require("gulp");
 const webp = require("gulp-webp");
 var htmlmin = require("gulp-html-minifier");
 const minify = require("gulp-minify");
 var concat = require("gulp-concat");
+
+//
+function svg() {
+  return src("media/retina/sprite/*.svg")
+    .pipe(svgSprite(config))
+    .pipe(dest("media/retina"));
+}
 
 // Watch css
 function css() {
@@ -43,8 +51,9 @@ gulp.task("minify", function () {
 //Watch files
 function watchFiles() {
   watch(["scss"], css);
+  watch(["svg"], svg);
   watch(["./js/*.js"], minifyjs);
 }
 
-exports.default = series(css, minify, minifyjs);
+exports.default = series(svg, css, minify, minifyjs);
 exports.watch = watchFiles;
