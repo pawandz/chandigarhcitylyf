@@ -29,10 +29,10 @@ function css() {
 
 // Watch minifyjs
 function minifyjs() {
-  return src("./js/*.js", { allowEmpty: true })
+  return src("js/*.js", { allowEmpty: true })
     .pipe(minify({ noSource: true }))
     .pipe(concat("main.js"))
-    .pipe(dest("./js/min"));
+    .pipe(dest("js/min"));
 }
 
 // Watch webp

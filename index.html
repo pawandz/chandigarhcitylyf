@@ -242,92 +242,74 @@
       </div>
     </header>
     <main class="main" id="main">
-      <div class="hero-fold">
-        <!--Main Slider Start-->
-        <section class="main-slider">
-          <div class="swiper-container thm-swiper__slider">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div
-                  class="image-layer"
-                  style="
-                    background-image: url(https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2047&q=80);
-                  "
-                ></div>
-
-                <div class="container">
-                  <div class="main-slider__content">
-                    <div class="main-slider__title-box-1">
-                      <h2>Chandigarh - The City Beautiful</h2>
-                      <div class="main-slider__title-box-2">
-                        <h2>Chandigarh - The City Beautiful</h2>
-                      </div>
-                    </div>
-
-                    <div class="main-slider-badge">
-                      <img
-                        data-tilt
-                        src="assets/images/resources/main-slider-badge.png"
-                        alt=""
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- If we need navigation buttons -->
-            <div class="slider-bottom-box clearfix">
-              <div class="swiper-pagination" id="main-slider-pagination"></div>
-              <div class="main-slider__nav">
-                <div
-                  class="swiper-button-prev"
-                  id="main-slider__swiper-button-next"
-                >
-                  <svg
-                    width="20"
-                    height="20"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <g
-                      fill="none"
-                      stroke="#fff"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                    >
-                      <path data-name="Right" d="m7.6 7-5.1 5 5.1 5" />
-                      <path d="M21.5 12H4.8" />
-                    </g>
-                  </svg>
-                </div>
-                <div
-                  class="swiper-button-next"
-                  id="main-slider__swiper-button-prev"
-                >
-                  <svg
-                    width="20"
-                    height="20"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <g
-                      fill="none"
-                      stroke="#fff"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                    >
-                      <path data-name="Right" d="m16.4 7 5.1 5-5.1 5" />
-                      <path d="M2.5 12h16.7" />
-                    </g>
-                  </svg>
-                </div>
-              </div>
-            </div>
+      <div class="hero-slider hero-slider-js">
+        <!-- swiper slides -->
+        <div class="swiper-wrapper">
+          <div
+            class="swiper-slide"
+            style="
+              background-image: url(https://source.unsplash.com/random?sig=24);
+            "
+          >
+            <h2>
+              Chandigarh <br />
+              - The City Beautiful
+            </h2>
           </div>
-        </section>
-        <!--Main Slider End-->
+
+          <div
+            class="swiper-slide"
+            style="
+              background-image: url(https://source.unsplash.com/random?sig=53);
+            "
+          >
+            <h2>
+              Chandigarh <br />
+              - The City Beautiful
+            </h2>
+          </div>
+
+          <div
+            class="swiper-slide"
+            style="
+              background-image: url(https://source.unsplash.com/random?sig=52);
+            "
+          >
+            <h2>
+              Chandigarh <br />
+              - The City Beautiful
+            </h2>
+          </div>
+
+          <div
+            class="swiper-slide"
+            style="
+              background-image: url(https://source.unsplash.com/random?sig=21);
+            "
+          ></div>
+
+          <div
+            class="swiper-slide"
+            style="
+              background-image: url(https://source.unsplash.com/random?sig=53);
+            "
+          >
+            <h2>
+              Chandigarh <br />
+              - The City Beautiful
+            </h2>
+          </div>
+        </div>
+        <!-- !swiper slides -->
+
+        <!-- next / prev arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <!-- !next / prev arrows -->
+
+        <!-- pagination dots -->
+        <div class="swiper-pagination"></div>
+        <!-- !pagination dots -->
       </div>
       <section class="section p-0" data-collection="cms">
         <div class="split-hero-container">
@@ -373,19 +355,21 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-4">
-              <div class="section-head">
-                <div class="section-heading">
-                  <h2>There's more to</h2>
-                  <p>
-                    Chandigarh is indeed renowned as a well-planned city, known
-                    for its modern architecture, systematic layout, and
-                    efficient urban design. Here are some key features that
-                    contribute to Chandigarh's reputation as a well-planned
-                    city:
-                  </p>
+              <div class="sticky-md-top">
+                <div class="section-head">
+                  <div class="section-heading">
+                    <h2>There's more to</h2>
+                    <p>
+                      Chandigarh is indeed renowned as a well-planned city,
+                      known for its modern architecture, systematic layout, and
+                      efficient urban design. Here are some key features that
+                      contribute to Chandigarh's reputation as a well-planned
+                      city:
+                    </p>
+                  </div>
                 </div>
+                <img src="./media/webp/chd/chandigarh.webp" alt="" />
               </div>
-              <img src="./media/webp/chd/chandigarh.webp" alt="" />
             </div>
             <div class="col-lg-7 offset-lg-1">
               <div class="renting">
@@ -537,21 +521,14 @@
           </div>
         </div>
       </section>
-      <section class="section p-0" data-collection="banner">
-        <div class="poster-layout-1">
-          <div class="poster">
-            <a target="_self" href="#" title="Banner Layout2">
-              <img
-                src="./media/webp/chd/women-statues-rock-garden-chandigarh-nekchand.webp"
-                alt="Banner Layout2"
-                title="Banner Layout2"
-                decoding="async"
-              />
-            </a>
-          </div>
-        </div>
-      </section>
-      <section class="section bg-section" data-collection="testimonials">
+
+      <section
+        class="section bg-testimonials"
+        data-collection="testimonials"
+        style="
+          background-image: url(./media/webp/chd/women-statues-rock-garden-chandigarh-nekchand.webp);
+        "
+      >
         <div class="container">
           <div class="section-head">
             <div class="section-heading">
@@ -677,6 +654,156 @@
           </div>
         </div>
       </section>
+      <div class="section parallax-section">
+        <div class="container">
+          <div class="parallax-swiper parallax-swiper-js">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="people__card">
+                  <img
+                    src="https://i.imgur.com/gIxOPCD.jpg"
+                    class="people__card__image"
+                  />
+                  <div class="people__card__content">
+                    <div class="slide__number">01</div>
+                    <div class="slide__title">G.I. Joe: Retaliation</div>
+                    <div class="slide__subtitle">
+                      The G.I. Joes are not only fighting their mortal enemy
+                      Cobra; they are forced to contend with threats from within
+                      the government that jeopardize their very existence.
+                    </div>
+                    <a href="" class="slide__btn">
+                      <span class="slide__btn__text">Watch Now</span>
+                      <span class="slide__btn__icon">
+                        <svg
+                          width="100%"
+                          height="100%"
+                          viewBox="0 0 17 21"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M3.22218 15.2222C2.79261 15.6518 2.79261 16.3482 3.22218 16.7778C3.65176 17.2074 4.34824 17.2074 4.77782 16.7778L3.22218 15.2222ZM16.1 5C16.1 4.39249 15.6075 3.9 15 3.9L5.1 3.9C4.49249 3.9 4 4.39249 4 5C4 5.60751 4.49249 6.1 5.1 6.1L13.9 6.1L13.9 14.9C13.9 15.5075 14.3925 16 15 16C15.6075 16 16.1 15.5075 16.1 14.9L16.1 5ZM4.77782 16.7778L15.7778 5.77782L14.2222 4.22218L3.22218 15.2222L4.77782 16.7778Z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </span>
+                    </a>
+                  </div>
+                  <div class="slide__gradient"></div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="people__card">
+                  <img
+                    src="https://i.imgur.com/2V1lJy4.jpg"
+                    class="people__card__image"
+                  />
+                  <div class="people__card__content">
+                    <div class="slide__number">02</div>
+                    <div class="slide__title">Red Notice</div>
+                    <div class="slide__subtitle">
+                      An Interpol agent successfully tracks down the world's
+                      most wanted art thief with help from a rival thief. But
+                      nothing is as it seems as a series of double-crosses
+                      ensues.
+                    </div>
+                    <a href="" class="slide__btn">
+                      <span class="slide__btn__text">Watch Now</span>
+                      <span class="slide__btn__icon">
+                        <svg
+                          width="100%"
+                          height="100%"
+                          viewBox="0 0 17 21"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M3.22218 15.2222C2.79261 15.6518 2.79261 16.3482 3.22218 16.7778C3.65176 17.2074 4.34824 17.2074 4.77782 16.7778L3.22218 15.2222ZM16.1 5C16.1 4.39249 15.6075 3.9 15 3.9L5.1 3.9C4.49249 3.9 4 4.39249 4 5C4 5.60751 4.49249 6.1 5.1 6.1L13.9 6.1L13.9 14.9C13.9 15.5075 14.3925 16 15 16C15.6075 16 16.1 15.5075 16.1 14.9L16.1 5ZM4.77782 16.7778L15.7778 5.77782L14.2222 4.22218L3.22218 15.2222L4.77782 16.7778Z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </span>
+                    </a>
+                  </div>
+                  <div class="slide__gradient"></div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="people__card">
+                  <img
+                    src="https://i.imgur.com/3tlt7BS.jpg"
+                    class="people__card__image"
+                  />
+                  <div class="people__card__content">
+                    <div class="slide__number">03</div>
+                    <div class="slide__title">Battleship</div>
+                    <div class="slide__subtitle">
+                      A fleet of ships is forced to do battle with an armada of
+                      unknown origins in order to discover and thwart their
+                      destructive goals.
+                    </div>
+                    <a href="" class="slide__btn">
+                      <span class="slide__btn__text">Watch Now</span>
+                      <span class="slide__btn__icon">
+                        <svg
+                          width="100%"
+                          height="100%"
+                          viewBox="0 0 17 21"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M3.22218 15.2222C2.79261 15.6518 2.79261 16.3482 3.22218 16.7778C3.65176 17.2074 4.34824 17.2074 4.77782 16.7778L3.22218 15.2222ZM16.1 5C16.1 4.39249 15.6075 3.9 15 3.9L5.1 3.9C4.49249 3.9 4 4.39249 4 5C4 5.60751 4.49249 6.1 5.1 6.1L13.9 6.1L13.9 14.9C13.9 15.5075 14.3925 16 15 16C15.6075 16 16.1 15.5075 16.1 14.9L16.1 5ZM4.77782 16.7778L15.7778 5.77782L14.2222 4.22218L3.22218 15.2222L4.77782 16.7778Z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </span>
+                    </a>
+                  </div>
+                  <div class="slide__gradient"></div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="people__card">
+                  <img
+                    src="https://i.imgur.com/2Y4s19s.jpg"
+                    class="people__card__image"
+                  />
+                  <div class="people__card__content">
+                    <div class="slide__number">04</div>
+                    <div class="slide__title">London Has Fallen</div>
+                    <div class="slide__subtitle">
+                      In London for the Prime Minister's funeral, Mike Banning
+                      is caught up in a plot to assassinate all the attending
+                      world leaders.
+                    </div>
+                    <a href="" class="slide__btn">
+                      <span class="slide__btn__text">Watch Now</span>
+                      <span class="slide__btn__icon">
+                        <svg
+                          width="100%"
+                          height="100%"
+                          viewBox="0 0 17 21"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M3.22218 15.2222C2.79261 15.6518 2.79261 16.3482 3.22218 16.7778C3.65176 17.2074 4.34824 17.2074 4.77782 16.7778L3.22218 15.2222ZM16.1 5C16.1 4.39249 15.6075 3.9 15 3.9L5.1 3.9C4.49249 3.9 4 4.39249 4 5C4 5.60751 4.49249 6.1 5.1 6.1L13.9 6.1L13.9 14.9C13.9 15.5075 14.3925 16 15 16C15.6075 16 16.1 15.5075 16.1 14.9L16.1 5ZM4.77782 16.7778L15.7778 5.77782L14.2222 4.22218L3.22218 15.2222L4.77782 16.7778Z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </span>
+                    </a>
+                  </div>
+                  <div class="slide__gradient"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <section
         class="collection-instagram-1"
         id="instagram"
@@ -685,18 +812,10 @@
         <div class="insta-container">
           <div class="insta-wrap">
             <a class="insta" href="javascript:;" target="_blank"
-              ><img
-                data-yk=""
-                alt=""
-                data-aspect-ratio="1:1"
-                src="./media/400x400.png"
+              ><img data-yk="" alt="" src="./media/400x400.png"
             /></a>
             <a class="insta" href="javascript:;" target="_blank"
-              ><img
-                data-yk=""
-                alt=""
-                data-aspect-ratio="1:1"
-                src="./media/400x400.png"
+              ><img data-yk="" alt="" src="./media/400x400.png"
             /></a>
           </div>
           <div class="insta-profile">
@@ -709,18 +828,10 @@
           </div>
           <div class="insta-wrap">
             <a class="insta" href="javascript:;" target="_blank"
-              ><img
-                data-yk=""
-                alt=""
-                data-aspect-ratio="1:1"
-                src="./media/400x400.png"
+              ><img data-yk="" alt="" src="./media/400x400.png"
             /></a>
             <a class="insta" href="javascript:;" target="_blank"
-              ><img
-                data-yk=""
-                alt=""
-                data-aspect-ratio="1:1"
-                src="./media/400x400.png"
+              ><img data-yk="" alt="" src="./media/400x400.png"
             /></a>
           </div>
         </div>
@@ -756,58 +867,13 @@
                     </h4>
                     <ul class="footer-nav js-footer-nav">
                       <li class="footer-nav-item">
-                        <a
-                          class="footer-nav-link"
-                          target="_self"
-                          data-org-url="/products/featured"
-                          href="/products/featured"
-                          >Featured Products
-                        </a>
+                        <a class="footer-nav-link" href="#">Links </a>
                       </li>
                       <li class="footer-nav-item">
-                        <a
-                          class="footer-nav-link"
-                          target="_self"
-                          data-org-url="/shops/featured"
-                          href="/shops/featured"
-                          >Featured Shops
-                        </a>
+                        <a class="footer-nav-link" href="#">Links </a>
                       </li>
                       <li class="footer-nav-item">
-                        <a
-                          class="footer-nav-link"
-                          target="_self"
-                          data-org-url="//collections/view/8"
-                          href="//collections/view/8"
-                          >Top Brands
-                        </a>
-                      </li>
-                      <li class="footer-nav-item">
-                        <a
-                          class="footer-nav-link"
-                          target="_self"
-                          data-org-url="/collections/view/5"
-                          href="/collections/view/5"
-                          >Trending Products
-                        </a>
-                      </li>
-                      <li class="footer-nav-item">
-                        <a
-                          class="footer-nav-link"
-                          target="_self"
-                          data-org-url="/collections/view/6"
-                          href="/collections/view/6"
-                          >Clearance Sale
-                        </a>
-                      </li>
-                      <li class="footer-nav-item">
-                        <a
-                          class="footer-nav-link"
-                          target="_self"
-                          data-org-url="/sitemap"
-                          href="/sitemap"
-                          >Sitemap
-                        </a>
+                        <a class="footer-nav-link" href="#">Links </a>
                       </li>
                     </ul>
                   </div>
@@ -817,35 +883,17 @@
                     <h4
                       class="footer-group-head js-footer-group-head dropdown-toggle-custom"
                     >
-                      Sell with Us<i class="dropdown-toggle-custom-arrow"></i>
+                      Quick Links 2<i class="dropdown-toggle-custom-arrow"></i>
                     </h4>
                     <ul class="footer-nav js-footer-nav">
                       <li class="footer-nav-item">
-                        <a
-                          class="footer-nav-link"
-                          target="_self"
-                          data-org-url="/seller"
-                          href="/seller"
-                          >Become a Seller
-                        </a>
+                        <a class="footer-nav-link" href="#">Links </a>
                       </li>
                       <li class="footer-nav-item">
-                        <a
-                          class="footer-nav-link"
-                          target="_self"
-                          data-org-url="/guest-advertiser/account"
-                          href="/guest-advertiser/account"
-                          >Advertise with us
-                        </a>
+                        <a class="footer-nav-link" href="#">Links </a>
                       </li>
                       <li class="footer-nav-item">
-                        <a
-                          class="footer-nav-link"
-                          target="_self"
-                          data-org-url="/guest-affiliate"
-                          href="/guest-affiliate"
-                          >Affiliates
-                        </a>
+                        <a class="footer-nav-link" href="#">Links </a>
                       </li>
                     </ul>
                   </div>
@@ -855,71 +903,17 @@
                     <h4
                       class="footer-group-head js-footer-group-head dropdown-toggle-custom"
                     >
-                      Get to Know Us<i class="dropdown-toggle-custom-arrow"></i>
+                      Quick Links 3<i class="dropdown-toggle-custom-arrow"></i>
                     </h4>
                     <ul class="footer-nav js-footer-nav">
                       <li class="footer-nav-item">
-                        <a
-                          class="footer-nav-link"
-                          target="_self"
-                          data-org-url="//blog"
-                          href="//blog"
-                          >Blog
-                        </a>
+                        <a class="footer-nav-link" href="#">Links </a>
                       </li>
                       <li class="footer-nav-item">
-                        <a
-                          class="footer-nav-link"
-                          target="_self"
-                          data-org-url="/testimonials"
-                          href="/testimonials"
-                          >Testimonials
-                        </a>
+                        <a class="footer-nav-link" href="#">Links </a>
                       </li>
                       <li class="footer-nav-item">
-                        <a
-                          class="footer-nav-link"
-                          target="_self"
-                          data-org-url="/cms/view/1"
-                          href="/about-us"
-                          >About Us
-                        </a>
-                      </li>
-                      <li class="footer-nav-item">
-                        <a
-                          class="footer-nav-link"
-                          target="_self"
-                          data-org-url="//FAQs"
-                          href="//FAQs"
-                          >FAQs
-                        </a>
-                      </li>
-                      <li class="footer-nav-item">
-                        <a
-                          class="footer-nav-link"
-                          target="_self"
-                          data-org-url="/cms/view/3"
-                          href="/privacy-policies"
-                          >Privacy Policies
-                        </a>
-                      </li>
-                      <li class="footer-nav-item">
-                        <a
-                          class="footer-nav-link"
-                          target="_self"
-                          data-org-url="/cms/view/2"
-                          href="/terms"
-                          >Terms &amp; Conditions
-                        </a>
-                      </li>
-                      <li class="footer-nav-item">
-                        <a
-                          class="footer-nav-link"
-                          target="_self"
-                          data-org-url="/contact-us"
-                          href="/contact-us"
-                          >Contact Us
-                        </a>
+                        <a class="footer-nav-link" href="#">Links </a>
                       </li>
                     </ul>
                   </div>
@@ -927,93 +921,6 @@
               </div>
             </div>
             <div class="footer-layout-col">
-              <ul class="footer-social">
-                <li class="footer-social-item">
-                  <a
-                    class="footer-social-link"
-                    title="Facebook"
-                    target="_blank"
-                    rel="noopener"
-                    href="https://en-gb.facebook.com/YoKartSoftware/"
-                  >
-                    <img
-                      data-aspect-ratio="1:1"
-                      class="footer-social-icon"
-                      alt="Facebook"
-                      src="./media/social/facebook.svg"
-                    />
-                    <span class="footer-social-text">Facebook</span>
-                  </a>
-                </li>
-                <li class="footer-social-item">
-                  <a
-                    class="footer-social-link"
-                    title="Instagram"
-                    target="_blank"
-                    rel="noopener"
-                    href="https://www.instagram.com/yo_kart/?hl=en"
-                  >
-                    <img
-                      data-aspect-ratio="1:1"
-                      class="footer-social-icon"
-                      alt="Instagram"
-                      src="./media/social/instagram.svg"
-                    />
-                    <span class="footer-social-text">Instagram</span>
-                  </a>
-                </li>
-                <li class="footer-social-item">
-                  <a
-                    class="footer-social-link"
-                    title="Twitter Yokart"
-                    target="_blank"
-                    rel="noopener"
-                    href="https://twitter.com/Yo_Kart?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
-                  >
-                    <img
-                      data-aspect-ratio="1:1"
-                      class="footer-social-icon"
-                      alt="Twitter Yokart"
-                      src="./media/social/twitter.svg"
-                    />
-                    <span class="footer-social-text">Twitter Yokart</span>
-                  </a>
-                </li>
-                <li class="footer-social-item">
-                  <a
-                    class="footer-social-link"
-                    title="YouTube"
-                    target="_blank"
-                    rel="noopener"
-                    href="https://www.youtube.com/watch?v=PsxHrGIlJgQ"
-                  >
-                    <img
-                      data-aspect-ratio="1:1"
-                      class="footer-social-icon"
-                      alt="YouTube"
-                      src="./media/social/youtube.svg"
-                    />
-                    <span class="footer-social-text">YouTube</span>
-                  </a>
-                </li>
-                <li class="footer-social-item">
-                  <a
-                    class="footer-social-link"
-                    title="LinkedIn"
-                    target="_blank"
-                    rel="noopener"
-                    href="https://in.linkedin.com/showcase/yo-kart"
-                  >
-                    <img
-                      data-aspect-ratio="1:1"
-                      class="footer-social-icon"
-                      alt="LinkedIn"
-                      src="./media/social/linkedin.svg"
-                    />
-                    <span class="footer-social-text">LinkedIn</span>
-                  </a>
-                </li>
-              </ul>
               <ul class="contact-info">
                 <li class="contact-info-item">
                   <span class="contact-info-link">
@@ -1051,32 +958,56 @@
         <div class="container">
           <div class="footer-bottom-inner">
             <div class="copyright">Copyright © 2023 Chandigarh City</div>
-            <div class="payment">
-              <img
-                src="./media/payment-method/payment-1.svg"
-                width="36"
-                height="23"
-                alt="Payment Options"
-              />
-              <img
-                src="./media/payment-method/payment-2.svg"
-                width="36"
-                height="23"
-                alt="Payment Options"
-              />
-              <img
-                src="./media/payment-method/payment-3.svg"
-                width="36"
-                height="23"
-                alt="Payment Options"
-              />
-              <img
-                src="./media/payment-method/payment-4.svg"
-                width="36"
-                height="23"
-                alt="Payment Options"
-              />
-            </div>
+            <ul class="footer-social">
+              <li class="footer-social-item">
+                <a
+                  class="footer-social-link"
+                  title="Facebook"
+                  target="_blank"
+                  rel="noopener"
+                  href="#"
+                >
+                  <img
+                    class="footer-social-icon"
+                    alt="Facebook"
+                    src="./media/social/facebook.svg"
+                  />
+                  <span class="footer-social-text">Facebook</span>
+                </a>
+              </li>
+              <li class="footer-social-item">
+                <a
+                  class="footer-social-link"
+                  title="Instagram"
+                  target="_blank"
+                  rel="noopener"
+                  href="https://www.instagram.com/chandigarhcitylyf/"
+                >
+                  <img
+                    class="footer-social-icon"
+                    alt="Instagram"
+                    src="./media/social/instagram.svg"
+                  />
+                  <span class="footer-social-text">Instagram</span>
+                </a>
+              </li>
+              <li class="footer-social-item">
+                <a
+                  class="footer-social-link"
+                  title="Twitter chdcitylyf"
+                  target="_blank"
+                  rel="noopener"
+                  href="https://twitter.com/chdcitylyf"
+                >
+                  <img
+                    class="footer-social-icon"
+                    alt="Twitter chdcitylyf"
+                    src="./media/social/twitter.svg"
+                  />
+                  <span class="footer-social-text">Twitter chdcitylyf</span>
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
@@ -1084,60 +1015,7 @@
     <!-- JS ================================================== -->
 
     <!-- partial -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r83/three.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TweenMax.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="./js/min/main.js" type="text/javascript"></script>
-    <script>
-      var swiper = new Swiper(".testimonials-layout-2", {
-        grabCursor: true,
-        speed: 400,
-        loop: true,
-        mousewheel: {
-          invert: true,
-        },
-        scrollbar: {
-          el: ".swiper-scrollbar",
-          draggable: true,
-        },
-        slidesPerView: 1,
-        spaceBetween: 10,
-
-        breakpoints: {
-          900: {
-            slidesPerView: 2,
-            spaceBetween: 20,
-          },
-          1200: {
-            slidesPerView: 4,
-            spaceBetween: 20,
-          },
-        },
-      });
-
-      //
-
-      var swiper = new Swiper(".swiper-container", {
-        direction: "horizontal",
-        slidesPerView: 1,
-        loop: true,
-        effect: "fade",
-        speed: 1000,
-        navigation: {
-          nextEl: "#main-slider__swiper-button-next",
-          prevEl: "#main-slider__swiper-button-prev",
-        },
-        pagination: {
-          el: "#main-slider-pagination",
-          type: "bullets",
-          clickable: true,
-        },
-        autoplay: {
-          delay: 5000,
-        },
-        touchEventsTarget: "container",
-      });
-    </script>
   </body>
 </html>

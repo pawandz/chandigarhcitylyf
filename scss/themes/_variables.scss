@@ -5,13 +5,11 @@
   --background-bg-secondary: #fff;
   --background-bg-tertiary: rgba(0, 0, 0, 0.06);
 
-  --brand-color: #0d8065;
-  --brand-color-alpha: 13, 128, 101;
+  --brand-color: #166aea;
   --brand-color-inverse: rgb(255, 255, 255);
 
-  --secondary-color: #14424c;
+  --secondary-color: #fff;
   --secondary-color-inverse: #ffffff;
-  --secondary-color-alpha: 7, 149, 230;
 }
 
 //default colors
@@ -21,24 +19,14 @@ $primary: #ff3a59;
 $black: rgba(0, 0, 0, 1);
 
 //dynamic theme colors
-$brand-color: #0d8065;
+$brand-color: #166aea;
 $brand-color-inverse: #fff;
-$bg-brand-light: rgba(var(--brand-color-alpha), 0.1);
-$bg-brand-100: rgba(var(--brand-color-alpha), 0.1);
-$bg-brand-200: rgba(var(--brand-color-alpha), 0.2);
-$bg-brand-300: rgba(var(--brand-color-alpha), 0.3);
-$bg-brand-400: rgba(var(--brand-color-alpha), 0.4);
-$bg-brand-500: rgba(var(--brand-color-alpha), 0.5);
-$bg-brand-600: rgba(var(--brand-color-alpha), 0.6);
-$bg-brand-700: rgba(var(--brand-color-alpha), 0.7);
-$bg-brand-800: rgba(var(--brand-color-alpha), 0.8);
-$bg-brand-900: rgba(var(--brand-color-alpha), 0.9);
 
-$primary-color: var(--primary-color);
-$primary-color-inverse: var(--primary-color-inverse);
+$primary-color: #166aea;
+$primary-color-inverse: #fff;
 
-$secondary-color: var(--secondary-color);
-$secondary-color-inverse: var(--secondary-color-inverse);
+$secondary-color: #6d5fd1;
+$secondary-color-inverse: #fff;
 
 $third-color: var(--third-color);
 $third-color-inverse: var(--third-color-inverse);
@@ -83,11 +71,8 @@ $outline: solid 1px $border-color;
 $bg-white: #fff;
 $bg-white-inverse: $txt-body;
 $bg-brand: $brand-color;
-//$bg-brand-light: rgba(var(--brand-color-alpha), 0.1);
-$bg-brand-light: $bg-brand-light;
 
 $bg-secondary: $secondary-color;
-$bg-secondary-light: rgba(var(--secondary-color-alpha), 0.1);
 
 $bg-light: #f3f4f5;
 $bg-gray: #f5f6f6;
@@ -155,7 +140,7 @@ $avatar-ratio: 1/1;
 }
 
 @mixin bg-brand-light {
-  background-color: $bg-brand-light;
+  background-color: lighten($bg-brand, 40);
   color: $brand-color;
 }
 
