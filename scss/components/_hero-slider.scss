@@ -72,7 +72,7 @@
       pointer-events: none;
       opacity: 0;
       color: #ffffff;
-      font-size: 5rem;
+      font-size: calc(105.5% + 3vw);
       letter-spacing: -1px;
       transform: translateY(-5%) scale(0.8);
       transition: 1s ease;

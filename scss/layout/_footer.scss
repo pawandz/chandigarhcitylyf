@@ -135,18 +135,15 @@
       }
 
       @include media-breakpoint-down(sm) {
-        background-color: $bg-gray;
-        padding: 1rem;
-
         &.is-active {
-          background-color: darken($bg-gray, 10);
+          //background-color: darken($bg-gray, 10);
         }
       }
     }
 
     .footer-nav {
       @include media-breakpoint-down(sm) {
-        display: none;
+        //display: none;
       }
 
       &-item {

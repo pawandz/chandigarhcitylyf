@@ -104,6 +104,9 @@
   display: grid;
   gap: 2rem;
   grid-template-columns: repeat(2, 1fr);
+  @include media-breakpoint-down(sm) {
+    margin-top: 2rem;
+  }
 
   &-item {
   }
