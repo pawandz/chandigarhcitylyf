@@ -115,7 +115,7 @@
       font-weight: $font-weight-bold;
       padding: 5px 0;
       margin-bottom: 20px;
-      border-radius: $common-radius;
+      border-radius: $card-radius;
 
       @include media-breakpoint-up(lg) {
         cursor: default;

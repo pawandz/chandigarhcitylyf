@@ -52,11 +52,11 @@ const parallax = new Swiper(".parallax-swiper-js", {
   },
   breakpoints: {
     767: {
-      slidesPerView: 2,
+      slidesPerView: 3,
       spaceBetween: 24,
     },
     1699: {
-      slidesPerView: 3,
+      slidesPerView: 5,
       spaceBetween: 24,
     },
   },
