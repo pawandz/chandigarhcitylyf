@@ -46,6 +46,10 @@ const parallax = new Swiper(".parallax-swiper-js", {
   slidesPerGroup: 1,
   centeredSlides: false,
   loop: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
   spaceBetween: 10,
   mousewheel: {
     forceToAxis: true,
